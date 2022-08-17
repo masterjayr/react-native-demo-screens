@@ -20,7 +20,7 @@ function LoginScreen({ navigation }) {
 			<SizedBox />
 			<SizedBox />
 			<View style={styles.headerText}>
-				<AuthHeader text="Login" />
+				<AuthHeader text="Logins" />
 			</View>
 
 			<LoginForm />
