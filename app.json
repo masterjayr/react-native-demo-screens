@@ -4,6 +4,7 @@
     "slug": "petsco",
     "version": "1.0.0",
     "orientation": "portrait",
+    "runtimeVersion": "2.718",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/petsco.png",
@@ -27,5 +28,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     }
+    
   }
 }
