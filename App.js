@@ -1,6 +1,5 @@
-import { useState, useEffect, useCallback } from "react";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import LoginScreen from "./screens/auth/LoginScreen";
 import SignupScreen from "./screens/auth/SignupScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";

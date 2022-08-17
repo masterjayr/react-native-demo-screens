@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Colors } from "../constants/styles";
-import { FontAwesome } from "@expo/vector-icons";
 import { TextInput } from "react-native-paper";
 
 function Input({ label, isInvalid, textInputConfig, obscureText }) {

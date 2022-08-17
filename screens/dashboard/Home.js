@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, Text } from "react-native";
 
 function Home() {
 	return (
@@ -10,5 +10,3 @@ function Home() {
 }
 
 export default Home;
-
-const styles = StyleSheet.create({});
