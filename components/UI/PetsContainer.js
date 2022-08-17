@@ -19,7 +19,7 @@ function PetsContainer({ petName, location, amount }) {
 				<View style={styles.rowContainer}>
 					<FontAwesome
 						name="map-marker"
-						size={20}
+						size={15}
 						color="gray"
 						style={styles.icon}
 					/>
@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		marginHorizontal: 10,
 	},
-
 	petName: {
 		color: "black",
 		fontSize: 16,

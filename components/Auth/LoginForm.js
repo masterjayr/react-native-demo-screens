@@ -19,9 +19,9 @@ function LoginForm() {
 				textInputConfig={{
 					keyboardType: "default",
 					onChangeText: () => {},
-					secureTextEntry: true,
 					placeholder: "Password",
 				}}
+				obscureText={true}
 			/>
 		</View>
 	);

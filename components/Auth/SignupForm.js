@@ -20,9 +20,9 @@ function SignupForm() {
 				textInputConfig={{
 					keyboardType: "default",
 					onChangeText: () => {},
-					secureTextEntry: true,
 					placeholder: "Password",
 				}}
+				obscureText={true}
 			/>
 
 			<SizedBox />

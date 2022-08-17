@@ -1,18 +1,43 @@
-import React from "react";
-import { View, Text, TextInput, StyleSheet } from "react-native";
+import React, { useState } from "react";
+import { View, Text, StyleSheet } from "react-native";
 import { Colors } from "../constants/styles";
+import { FontAwesome } from "@expo/vector-icons";
+import { TextInput } from "react-native-paper";
 
-function Input({ label, isInvalid, textInputConfig, containerStyle }) {
+function Input({ label, isInvalid, textInputConfig, obscureText }) {
+	const [passwordVisible, setPasswordVisible] = useState(true);
+
 	return (
 		<View style={styles.inputContainer}>
 			<Text style={[styles.label, isInvalid && styles.labelInvalid]}>
 				{label}
 			</Text>
-			<TextInput
-				{...textInputConfig}
-				placeholder={textInputConfig.placeholder}
-				style={[styles.input, isInvalid && styles.inputInvalid]}
-			/>
+
+			{obscureText ? (
+				<TextInput
+					{...textInputConfig}
+					secureTextEntry={passwordVisible}
+					underlineColor="transparent"
+					activeUnderlineColor={Colors.primary100}
+					placeholder={textInputConfig.placeholder}
+					style={[styles.input, isInvalid && styles.inputInvalid]}
+					right={
+						<TextInput.Icon
+							name={passwordVisible ? "eye" : "eye-off"}
+							onPress={() => setPasswordVisible(!passwordVisible)}
+						/>
+					}
+				/>
+			) : (
+				<TextInput
+					{...textInputConfig}
+					secureTextEntry={false}
+					underlineColor="transparent"
+					activeUnderlineColor={Colors.primary100}
+					placeholder={textInputConfig.placeholder}
+					style={[styles.input, isInvalid && styles.inputInvalid]}
+				/>
+			)}
 		</View>
 	);
 }
@@ -31,7 +56,8 @@ const styles = StyleSheet.create({
 		color: Colors.error500,
 	},
 	input: {
-		height: 45,
+		height: 35,
+		borderBottomWidth: 0,
 		paddingVertical: 8,
 		paddingHorizontal: 6,
 		backgroundColor: Colors.primaryGray,

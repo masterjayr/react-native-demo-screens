@@ -10,19 +10,19 @@ const petInfoList = [
 		id: "1",
 		petName: "RotWeiler",
 		location: "Agbowo",
-		amount: "N 200,000",
+		amount: "₦ 200,000",
 	},
 	{
 		id: "2",
 		petName: "Local Fowl",
 		location: "Badija",
-		amount: "N 6000",
+		amount: "₦ 6000",
 	},
 	{
 		id: "3",
 		petName: "Local Dog",
 		location: "Dugbe",
-		amount: "N 45,000",
+		amount: "₦ 45,000",
 	},
 ];
 
@@ -33,7 +33,7 @@ function Pets() {
 			<SizedBox />
 			<AuthHeader text="Petsco" />
 
-			<View style={{ margin: 10 }}>
+			<View>
 				<FlatList
 					data={petInfoList}
 					horizontal={false}
