@@ -4,7 +4,6 @@
     "slug": "petsco",
     "version": "1.0.0",
     "orientation": "portrait",
-    "runtimeVersion": "2.718",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/petsco.png",
@@ -12,8 +11,7 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0,
-      "url": "https://u.expo.dev/b9e36334-5a0c-4980-a840-e45687e35f6a"
+      "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"

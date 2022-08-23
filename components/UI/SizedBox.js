@@ -8,6 +8,6 @@ export default SizedBox;
 
 const styles = StyleSheet.create({
 	space: {
-		marginVertical: 10,
+		marginVertical: 12,
 	},
 });
